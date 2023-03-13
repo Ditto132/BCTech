@@ -2,5 +2,5 @@
 
 traces
 | where customDimensions.eventId in ( 'AL0000DHR', 'AL0000DHS', 'AL0000DGF' )
-| where isempty( customDimensions.alRunID )
+| where customDimensions.alRunID == '{00000000-0000-0000-0000-000000000000}'
 
